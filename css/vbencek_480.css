@@ -1,0 +1,126 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21.03.2019., 22:40:17
+    Author     : Tino
+*/
+@media only screen and (max-width: 480px) {
+    nav{
+        text-align: left;
+        width:35%;
+        padding-top: 10px;
+        padding-bottom:10px;
+        margin-left:0px;
+        margin-right:auto;
+        background-color: #1768AC;
+    }
+    nav a{
+        margin-left: 10px;
+        margin-top: 5px;
+        margin-right:auto;
+        border-bottom:#26C485 1px solid;
+    }
+    .navigacijaNatjecanja{
+        width:100%;
+    }
+    .navigacijaNatjecanja a{
+        text-indent: 5px;
+        margin-left: 5px;
+        margin-right: auto;
+    }
+    .okvirInfo{
+        width:80%;
+        overflow: hidden;
+
+    }
+
+    .okvirPozdravnePoruke{
+        margin:30px 10px 30px 10px;
+        padding: 10px 10px 10px 10px;
+
+    }
+    .okvirPrijaveNaNatjecanje{
+        width:80%;
+    }
+    .okvirSlika{
+        margin-left: 20px;
+    }
+    .okvirText{
+        margin-left:10px;
+        margin-right:10px;
+        width:90%;
+        font-size: 12px;
+    }
+    article {  
+        text-indent: 10px;
+        margin: 10px 10px 10px 10px;
+        padding: 5px 5px 10px 5px;
+        width: 85%; 
+        font-size: 12px;
+    }
+    .okvirRegistacije{
+        width:60%;
+        overflow: hidden;
+    }
+    .labela{
+        width: 120px;
+        font-size: 13px;
+    }
+    .unos{
+        width:140px;
+        height: 20px;
+
+    }
+    .crvena{
+        background:red;
+        width:140px;
+        height: 20px;
+    }
+    .okvirPrijave{
+        width:60%;
+        overflow: hidden;
+    }
+    .labela-obrazac{
+        width: 150px;
+        font-size: 12px;
+    }
+    .misljenje{
+        color:#1b1725;
+        border-radius: 10px;
+        border:#1b1725;
+        width: 100%
+    }
+    .naslov-obrazac{
+        text-align: left;
+        padding-top:5px;
+        padding-bottom: 5px;
+    }
+    .cjeline-obrazac{
+        width:50%;
+
+    }
+    .gumb-postava{
+        width:50%;
+        margin-left:0;
+    }
+    .grid-glavni {
+        grid-template-columns: auto;
+    }
+    audio{
+        width: 150px;
+        height: 100px;
+    }
+    .tablica-naslov{
+        margin-left: 50px;
+        margin-right:50px;
+    }
+    .sakrij{
+        display:none;
+    }
+    .donje_slike{
+        margin-right:0px;
+    }
+}

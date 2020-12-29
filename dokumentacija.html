@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <title>Dokumentacija</title>
+        <meta charset="UTF-8">
+        <meta name="Autor" content="Valentino Bencek">
+        <meta name="Kljucne rijeci" content="dokumentacija;era;navigacijskiDijagram;opis;projekt;skripte;biblioteke;">
+        <meta name="Naslov" content="Dokumentacija">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/vbencek.css" rel="stylesheet" type="text/css">
+        <link href="css/vbencek_480.css" rel="stylesheet" type="text/css">
+        <link href="css/vbencek_1024.css" rel="stylesheet" type="text/css">
+        <link href="css/vbencek_720.css" rel="stylesheet" type="text/css"> 
+        <link href="css/vbencek_1366.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <h1>Dokumentacija</h1>
+        </header>
+        <nav>
+            <a href="index.php">Početna</a>
+        </nav>
+
+        <section class="okvirInfo">
+            <h2>Projektna dokumentacija </h2>
+
+            <article>
+                <h3> ERA model</h3>
+                <a href="multimedija/ERA.png" target="blank">
+                    <img class="slikaPocetna" src="multimedija/era_pozadina.png" alt="era model">
+                </a>
+            </article>
+            <article>
+                <h3> Navigacijski</h3>
+                <a href="multimedija/navigacijski.png" target="blank">
+                    <img class="slikaPocetna" src="multimedija/nav_pozadina.png" alt="navigacijski">
+                </a>
+            </article>
+            <div >
+                <h3 class="naslov-obrazac">Opis projektnog zadatka</h3>
+                <p class="okvirDokumentacjeText">  <b>Kratak opis projekta:</b><br>
+                    Sustav služi za kreiranje, prijavu i održavanje natjecanja za ribolov.<br><br>
+                    <b>Uloge:</b><br>
+                     Neregistrirani <br>
+                     Registrirani korisnik / Natjecatelj<br>
+                     Moderator / Organizator<br>
+                     Administrator / Povjerenstvo<br><br>
+                    <b>Detaljne upute:</b><br>
+                    Administrator<br>
+                     Kreira ribički klub i dodjeljuje moderatore klubovima.<br>
+                     Kreira lokacije (Drava, Sava, ….).<br>
+                     Pregledava zahtjeve moderatora, ako ima samo jednog korisnika s najvećim brojem bodova
+                    samo njega može proglasiti pobjednikom. Korisnika se automatski obavještava mailom da je
+                    dobio nagradu. Ako ima više korisnika s jednakim brojem bodova, ima opciju da odabere
+                    pobjednika uz unos opisa zašto je njega odabrao.<br>
+                     Pregledava statistike zahtjeva prijava (odobrenih/odbijenih) u nekom razdoblju po ribičkom
+                    klubu uz mogućnost da se odabere klub i onda se dobiju podaci po pojedinoj lokaciji.<br><br>
+                    Moderator<br>
+                     Kreira natjecanje pri čemu obavezno odabire lokaciju te unosi naziv, opis, početak i kraj
+                    natjecanja.<br>
+                     Pregledava i odobrava zahtjeve prijava. Odobren/odbijen zahtjev prijave ima datum i vrijeme
+                    odobravanja/odbijanja. Ako je korisnik već prijavljen u neko drugo natjecanje koje još traje
+                    zahtjev mu se samo može odbiti prijava.<br>
+                     Vidi stranicu s informacijom o sudionicima na natjecanjima, gdje unosi bodove sudionicima
+                    nakon završetka natjecanja te šalje zahtjev za proglašenjem pobjednika administratoru.<br><br>
+                    Registrirani korisnik<br>
+                     Kreira zahtjev prijave na natjecanje uz prilaganje svoje slike. Dobiva bodove na temelju
+                    kvalitete i količine podataka ispunjenog zahtjeva (naziv, opis, …).<br>
+                     Pregledava zahtjeve prijava na natjecanju sa statusom (prihvaćen, odbijen).<br>
+                     Pregledava natjecanja na kojima sudjeluje zajedno sa popisom ostalih sudionika. Vidi stranicu<br>
+                    sa svojim ostvarenim rezultatima.<br><br>
+                    Neregistrirani korisnik<br>
+                     Može pretraživati natjecanja uz mogućnost filtriranja po ribičkom klubu. Svaki element ima
+                    dvije poveznice na klub i natjecanje.<br>
+                     Vidi informacije o natjecanju sa slikom pobjednika ako on postoji.<br>
+                     Vidi informacije o klubu.</p>
+            </div>
+            
+            <div>
+                <h3 class="naslov-obrazac"> Opis projektnog rješenja</h3>
+                <p class="okvirDokumentacjeText">
+                    Projektno rješenje realizirano je na način da je napravljena web stranica ribolovnih natjecanja sa
+                    mogućnostima kreiranja i prijave na natjecanje, te pomočnim funkcionalnostima kreiranja ribolovnih klubova,
+                    lokacija i slično. Ideja stranice je da se korisnik registrira u aplikaciju te da pregleda postojeća natjecanja i
+                    prijavi se na jedno od predloženih natjecanja. Moderator aplikacije tada mu odobrava ili odbija prijavu te se korisnika
+                    dodajeu bazu pod sudionikom natjecanja. Nakon završetka natjecanja moderator unosi bodove sudionicima te šalje zahtjev
+                    administratoru da proglasi pobjednika. Administrator tada prihvaća zahtjev te se u tablicu natjecanja upisuje pobjednik.
+                    Moderator također kreira natjecanja za klubove kojima je moderator. Administrator još ima mogućnosti koje su navedene u 
+                    projektnom zadatku.
+                    
+                </p>
+                
+            </div>
+            
+            <div>
+                <h3 class="naslov-obrazac">Opis skripta</h3>
+                <p class="okvirDokumentacjeText">
+                    <b>kreiranjeKluba.php</b> - skripta služi za dodavanje i ažuriranje ribičkih klubova.<br>
+                    <b>kreiranjeLokacije.php</b> - skripta služi za dodavanje i ažuriranje lokacija.<br>
+                    <b>kreiranjeNatjecanja.php</b> - skripta služi za dodavanje i ažuriranje natjecanja.<br>
+                    <b>prijava.php</b> - skripta služi za prijavu u aplikaciju<br>
+                    <b>prijavaNaNatjecanje.php</b> - skripta služi za prijavu registriranih korisnika na natjecanje.<br>
+                    <b>proglasenjePobjednika.php</b> - skripta služi za proglašenje pobjednika natjecanja, radnju obavlja administrator,a
+                    poziva se u slučaju da postoje dva korisnika sa jednakim brojem bodova.<br>
+                    <b>registracija.php</b> - skripta služi za registraciju neregistriranog u sustav.<br>
+                        <b>unosBodova.php</b> - skripta koja prikazuje sve sudionike natjecanja i omogućuje ažuriranje bodova natjecateljima.
+                    Također omogućuje moderatoru slanje zahtjeva za proglašenje pobjednika administratoru.<br>
+                    <b>lokacije.php</b> - skripta služi za prikaz svih lokacije te omogućuje njihovo brisanje.<br>
+                    <b>mojaNatjecanja.php</b> - skripta prikazuje sva natjecanja na kojim sudjeluje korisnik.<br>
+                    <b>mojePrijave.php</b> - skripta koja prikazuje sve prijave korisnika na natjecanje.<br>
+                    <b>mojiRezultati.php</b> - skripta prikazuje sve rezultate korisnika na natjecanjima.<br>
+                    <b>natjecanja.php</b> - skripta prikazuje popis svih natjecanja i ribickih klubova koji ih organiziraju. Također
+                    omogućuje brisanje natjecnja.<br>
+                    <b>opisKluba.php</b> - skripta prikazuje sve informacije o odabranom klubu.<br>
+                    <b>opisNatjecanja.php</b> - skripta prikazuje sve informacije o odabranom natjecanju.<br>
+                    <b>popisKorisnika.php</b> - skripta prikazuje sve korisnike sustave te mogućnost blokiranja/odblokiranja korisnika.<br>
+                    <b>popisPrijava.php</b> - skripta pokazuje sve prijave na natjecanje te mogućnost prihvaćanja/ odbijanja.<br>
+                    <b>ribickiKlub.php</b> - skripta prikazuje sve ribičke klubove te omogućuje njihovo brisanje.<br>
+                    <b>statistikaLokacija.php</b> - skripta prikazuje sve lokacije odabranog kluba te broj dodbrenih/odbijenih prijava.<br>
+                    <b>statistikePrijava.php</b> - skripta prikazuje ribičke klubove i broj odabranih/odbijenih prijava po klubu.<br>
+                        <b>zahtjeviZaProglašenje.php</b> - skripta prikazuje sve zahtjeve moderatora te daje mogućnost proglašenja.<br>
+                    <b>aktivacijaRacuna.php</b> - skripta omogućuje aktivaciju korisničkog računa preko aktivacijskog koda.<br>
+                   <b> odjava.php</b> - skripta omogučuje odjavu sa aplikacije.<br>
+                    <b>provjeraKorime.php</b> - skripta omogućuje provjeru duplikata korisničkog imena u bazi.<br>
+                </p>
+                
+                
+            </div>
+            <div>
+                <h3 class="naslov-obrazac"> Korištene tehnologije i alati </h3>
+                <p class="okvirDokumentacjeText">
+                    <b>NetBeans</b> - korišten za izradu aplikacijskog koda(skripti, html dokumenata, java i sl.).<br>
+                    <b>PhpMyAdmin</b> - korišten za pohranu podataka u bazu.<br>
+                    <b>Mysql WorkBench</b> - korišten za izradu ERA modela baze podataka. <br>
+                    <b>Filezila </b> - korištena za upravljane mapama i datotekama na serveru.<br>
+                    <b>Gmail</b> - korišten za provjeru aktivacijskog koda i slično.<br>
+                    <b>Google Chrome</b> - korišten za izvođenje projekta.<br>
+                    <b>Mozila firefox</b> - korištena kao 2. preglednik.<br>
+                    <b>Putty</b> - korišten za mijenjanje autorskih prava.<br>
+                    <b>https://www.htaccesstools.com/</b> - stranica korištena za generiranje .htaccess lozinke<br>
+                    <b>https://w3schools.com</b> - stranica reference za naredbe php-a, elemente htmla i sl.<br>
+                    <b>stackoverflow.com</b> - stranica reference za ispravljane grešaka u kodu.<br>
+                </p>
+            </div>
+            <div>
+                <h3 class="naslov-obrazac">Popis vanjskih modula/biblioteka</h3>
+                <p class="okvirDokumentacjeText">
+                    <b>http://www.howto-expert.com/how-to-get-https-setting-up-ssl-on-your-website/</b> - sa 
+                    ove stranice uzet je kod za funkcionalnost prijave da ide preko "https" protokola.<br>
+                    <b>Smarty</b> - korišten za implementciju rješenja<br>
+                    <b>baza.class.php</b> - preuzeto iz php vježbi na kolegiju WebDiP. Korištena za rad s bazom podataka.<br>
+                    <b>sesija.class.php</b> - preuzeto iz php vježbi na kolegiju WebDiP. Korištena za rad sa sesijama.<br>
+                    <b>DataTables</b> - vanjski modul korišten za uređivanje tabličnih prikaza.<br>
+                    
+                    
+                </p>
+            </div>
+            
+        </section>
+
+        <footer>
+            <p>
+                <a href="https://jigsaw.w3.org/css-validator/validator?uri=http://barka.foi.hr/WebDiP/2018_projekti/WebDiP2018x009/dokumentacija.html" target="blank">
+                    <img class="donje_slike" src="multimedija/CSS3.png" alt="css validacija" style="width:120px;height:120px;" >
+                </a>
+                <a href="http://validator.w3.org/check?uri=http://barka.foi.hr/WebDiP/2018_projekti/WebDiP2018x009/dokumentacija.html" target="blank">
+                    <img class="donje_slike" src="multimedija/HTML5.png" alt="html validacija" style="width:120px;height:120px;" > 
+                </a>
+                Autor: Valentino Bencek </p>
+            <address>Kontakt: <a href="mailto:vbencek@foi.hr">vbencek@foi.hr</a></address>
+            <p>Datum posljednje izmjene: 14.04.2019.</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,611 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13.03.2019., 18:27:38
+    Author     : Tino
+*/
+nav{
+    border-top:#26C485 solid;
+    border-bottom:#26C485 solid;
+    text-align: center;
+    width:100%;
+    padding-top: 10px;
+    padding-bottom:10px;
+    margin-left:auto;
+    margin-right:auto;
+    overflow:auto;
+    background-color: 	#38919F;
+}
+nav a{
+    margin-left: 25px;
+    margin-right:25px;
+}
+a{
+    font-size: 18px;
+    text-decoration: none;
+    color:#f2f5ea;
+    font-family: Verdana, Geneva, sans-serif; 
+}
+a:hover{
+    color:#00284F;
+}
+header {
+    background-color: #1D2D44;
+    text-align: center;
+    padding-top:25px;
+    padding-bottom: 25px;
+    font-family: Verdana, Geneva, sans-serif; 
+}
+header h1{
+    margin:0;
+    color: #26C485;
+}
+html,body{
+    background-image: url("../multimedija/pozadina.jpg");
+    background-repeat: repeat;
+    padding:0;
+    margin:0;
+    background-color: #fdfffc;
+    width:100%;
+    height:100%;
+}
+footer{
+    border-top-style: outset;
+    float:left;
+    width:100%;
+    background-color: #1D2D44;
+    border-top-color: #26C485;
+
+}
+footer p, footer address, footer a{
+    color:#f2f5ea;
+    font-size: 16px;
+    padding-left: 20px;
+}
+.donje_slike{
+    float:right;
+    padding-top: 20px;
+    margin-right:20px;
+}
+section h2{
+    margin-top: 80px;
+    text-align: center;
+    font-family: Verdana, Geneva, sans-serif; 
+    color: #26C485;
+}
+.okvirInfo{
+    margin-top:50px;
+    border-top-style: outset;
+    border-top-color:#26C485;
+    border-bottom-style: inset;
+    border-bottom-color:#26C485;
+    padding-top: 20px;
+    margin-left:auto;
+    margin-right:auto;
+    overflow:auto;
+    width:60%;
+    margin-bottom: 50px;
+    background-color: #00284F;
+
+}
+.okvirInfoVeci{
+    border-top-style: outset;
+    border-top-color:#26C485;
+    border-bottom-style: inset;
+    border-bottom-color:#26C485;
+    padding-top: 20px;
+    margin-left:auto;
+    margin-right:auto;
+    overflow:auto;
+    width:80%;
+    margin-bottom: 50px;
+    background-color: #00284F;
+}
+.okvirSlika{
+    float:left;
+    border-style: inset;
+    border-color: #26C485;
+    margin-left: 80px;
+    margin-top: 15px;
+
+}
+.okvirLista{
+    float:left;
+    color:#f2f5ea;
+    font-size: 16px;
+    line-height: 2;
+    list-style: none;
+    font-family: "Trebuchet Ms",Helvetica,sans-serif; 
+
+}
+.okvirLista li:before{
+    content: "\2022";
+    margin-right:8px;
+    color:#26C485;
+}
+
+.okvirText{
+    border-style:solid;
+    border-color: #1D2D44;
+    float:left;
+    margin-left:50px;
+    width:50%;
+    padding: 15px 10px 15px 10px;
+    background-color: #d6dbd2;
+    font-family: "Trebuchet Ms",Helvetica,sans-serif; 
+    color:#1D2D44;
+    text-indent: 30px;
+
+}
+
+article { 
+    background-color: #d6dbd2;
+    text-indent: 25px;
+    margin: 20px 50px 20px 50px;
+    padding: 10px 10px 15px 50px;
+    border:  #26C485 3px solid; 
+    width: 28%; height: 220px;
+    float: left;
+
+
+}
+article p{
+    font-family: "Trebuchet Ms",Helvetica,sans-serif; 
+    color:#1D2D44;
+
+}
+article h3{
+    font-family: Verdana, Geneva, sans-serif; 
+    color: #26C485;
+    text-align: left;
+}
+
+.okvirPozdravnePoruke{
+    border: 3px solid #26C485;
+    background-color: #fdfffc;
+    color:#1D2D44;
+    margin:50px 50px 50px 50px;
+    padding: 25px 25px 25px 25px;
+    float:left;
+    width:80%;
+    height: 150px;
+
+}
+.slikaPocetna{
+    height: 150px;
+    width:auto;
+}
+
+
+/* registracija */
+.labela{
+    color:#f2f5ea;
+    padding-top: 5px;
+    display:block;
+    width: 150px;
+    float:left;
+    font-family: Verdana, Geneva, sans-serif;
+}
+.labelaGreske{
+    padding-top: 5px;
+    float:left;
+    font-family: Verdana, Geneva, sans-serif;
+    color:#ff002a;
+    width:250px;
+    font-size: 12px;
+}
+.unos{
+    width:170px;
+    height: 30px;
+    margin-bottom: 10px;
+    text-indent: 5px;
+    font-family: Verdana, Geneva, sans-serif; 
+    border-radius: 10px;
+
+
+}
+.okvirRegistacije{
+    border-style: outset;
+    border-color:#26C485;
+    padding: 30px 30px 30px 30px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    overflow: auto;
+    width:25%;
+    background-color: #00284F;
+    border-radius: 30px;
+}
+.gumb{
+    background-color:#26C485;
+    border-radius:28px;
+    border:1px solid #18ab29;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:17px;
+    padding:10px 31px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #2f6627;
+    float:right;
+    margin:10px;
+}
+.gumb:hover {
+    background-color:#1768AC;
+}
+.gumb:active {
+    position:relative;
+    top:1px;
+}
+#ispisDuplikat{
+    background: #00284F;
+    border: none;
+    float:right;
+    margin-bottom: 10px;
+    color:#26C485;
+}
+
+
+
+/* prijava */
+.okvirPrijave{
+    border-style: outset;
+    border-color:#26C485;
+    padding: 30px 0px 30px 30px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 80px;
+    margin-bottom: 120px;
+    overflow: auto;
+    width:30%;
+    background-color: #00284F;
+    border-radius: 30px;
+}
+
+
+/* obrazac */
+.labela-obrazac{
+    color:#f2f5ea;
+    font-weight: bold;
+    display:block;
+    width: 300px;
+    float:left;
+    font-family: "Trebuchet Ms",Helvetica,sans-serif;
+}
+.liste{
+    background-color:#26C485;
+    border: #26C485 outset;
+    color: #f2f5ea;
+    border-radius: 10px;
+    margin-left:0px;
+    margin-top:10px;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+
+}
+.misljenje{
+    margin-top:10px;
+    color:#1D2D44;
+    border-radius: 10px;
+    border:#1D2D44;
+}
+.naslov-obrazac{
+    text-align: center;
+    padding-top:5px;
+    padding-bottom: 5px;
+    font-family: Verdana, Geneva, sans-serif; 
+    color:#26C485;
+}
+.cjeline-obrazac{
+    border-top: inset #26C485;
+    padding-top:15px;
+    margin-bottom: 50px;
+
+}
+.paragraf-obrazac{
+    color:#26C485;
+    font-weight: bold;
+    display:block;
+    width: 150px;
+    float:left;
+    font-family: "Trebuchet Ms",Helvetica,sans-serif;
+}
+.gumb-postava{
+    background-color:#26C485;
+    border: #26C485 outset;
+    color: #f2f5ea;
+    border-radius: 20px;
+    margin-left:25px;
+}
+
+/* popis */
+.tablica{
+    background-color: #d6dbd2;
+    border: none;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.tablica-naslov{
+    color:#26C485;
+    font-family: "Trebuchet Ms",Helvetica,sans-serif;
+    padding-bottom:5px;
+    margin-bottom: 20px;
+    border-bottom: solid #26C485;
+    text-align: center;
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.tablica-zaglavlje{
+    color:#1D2D44;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: "Trebuchet Ms",Helvetica,sans-serif;
+}
+.tablica-tijelo{
+    color:#1D2D44;
+    font-family: "Trebuchet Ms",Helvetica,sans-serif;
+    text-align: left;
+    text-indent: 10px;
+}
+td,th{
+    border: 1px solid #26C485;
+    border-left:none;
+    border-right:none;
+    color:#1D2D44;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, sans-serif; 
+}
+td:hover,th:hover{
+    background-color:#26C485;
+}
+.gumbDetalji{
+    background-color:#26C485;
+    border-radius:28px;
+    border:1px solid #18ab29;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:10px;
+    padding:2px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #2f6627;
+    float:right;
+    margin-right:10px;
+}
+.gumbDetalji:hover {
+    background-color:#1768AC;
+}
+
+.navigacijaNatjecanja{
+    background-color:#1D2D44;
+    width:60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border-top: #26C485 solid;
+    border-bottom: #26C485 solid;
+    text-align: center;
+    padding-top:5px;
+    padding-bottom: 5px;
+
+}
+.navigacijaNatjecanja a{
+    text-indent: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.navigacijaNatjecanja a:hover{
+    color:#26C485;
+}
+
+.gumbKreirajNatjecanje{
+    background-color:#26C485;
+    border-radius:28px;
+    border:1px solid #18ab29;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:14px;
+    padding:10px 20px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #2f6627;
+    float:right;
+    margin-top:10px;
+    margin-left:20px;
+    margin-right:10px;
+    margin-bottom: 20px;
+}
+.gumbKreirajNatjecanje:hover {
+    background-color:#1768AC;
+}
+.gumbKreirajNatjecanje:active {
+    position:relative;
+    top:1px;
+}
+
+
+/* za javu */
+.crvena{
+    background: red;
+    width:170px;
+    height: 30px;
+    margin-bottom: 10px;
+    font-family: "Comic Sans MS",cursive,sans-serif; 
+    border-radius: 10px;
+}
+
+/*Opis Natjecanja */
+.okvirOpisNatjecanja{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-left:auto;
+    margin-right:auto;
+    overflow:auto;
+    width:70%;
+    margin-top:50px;
+    margin-bottom: 50px;
+    background-color: #00284F;
+
+}
+.okvirOpisNatjecanja h2{
+    color:white;
+    font-family: "Trebuchet Ms",Helvetica,sans-serif;
+    padding-bottom:5px;
+    padding-left: 50px;
+    margin-bottom: 20px;
+    border-bottom: solid #26C485;
+    text-align: left;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    float:left;
+}
+.okvirOpisNatjecanja label{
+    float:left;
+    color:white;
+    margin-top:20px;
+    padding-top: 5px;
+    text-indent: 30px;
+    display:block;
+    font-family: Verdana, Geneva, sans-serif;
+    width:40%;
+}
+.okvirOpisNatjecanja figure{
+    float:left;
+    border: #26C485 solid;
+    width:100px;
+    height:100px;
+    margin-top: 30px;
+}
+.okvirOpisNatjecanja div{
+    float:left;
+    background: white;
+    border: solid #26C485;
+    color:#00284F;
+    font-size:14px;
+    word-spacing: 5px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 20px 20px 20px 20px;
+    text-indent: 10px;
+    height:100px;
+    width:80%;
+}
+.gumbOpisa{
+    background-color:#26C485;
+    border-radius:28px;
+    border:1px solid #18ab29;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:17px;
+    padding:10px 31px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #2f6627;
+    float:left;
+    margin-top:30px;
+    margin-left:20px;
+    margin-bottom: 20px;
+}
+.gumbOpisa:hover {
+    background-color:#1768AC;
+}
+.gumbOpisa:active {
+    position:relative;
+    top:1px;
+}
+
+/* prijava na natjecanje */
+.okvirPrijaveNaNatjecanje{
+    border-style: outset;
+    border-color:#26C485;
+    padding: 30px 0px 30px 30px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 80px;
+    margin-bottom: 120px;
+    overflow: auto;
+    width:40%;
+    background-color: #00284F;
+    border-radius: 30px;
+}
+
+/* moja natjecanja */
+.tablicaMojaNatjecanja{
+    background-color: #00284F;
+    border: none;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+.tablicaMojaNatjecanja caption{
+    color:#26C485;
+    font-family: "Trebuchet Ms",Helvetica,sans-serif;
+    padding-bottom:5px;
+    margin-bottom: 20px;
+    border-bottom: solid #26C485;
+    text-align: left;
+    width:50%;
+}
+.tablicaMojaNatjecanja td{
+    padding-left: 50px;
+    padding-right:50px;
+    border:none;
+    color: #fdfffc;
+    text-align: center;
+}
+.tablicaMojaNatjecanja th{
+    border-bottom: solid #26C485 1px;
+    border-right: solid 15px #00284F;
+    border-left: solid 15px #00284F;
+    padding-left: 50px;
+    padding-right:50px;
+    border:none;
+    color: #fdfffc;
+    text-align: center;
+}
+
+/* sudionici natjecanja   */
+.formaIzbora{
+    float:right;
+    margin:20px 20px 20px 20px;
+    padding:10px 10px 10px 10px;
+    border:#26C485 solid 3px;
+    border-radius: 20px;
+}
+.formaFiltera{
+    float:left;
+    margin:20px 20px 20px 20px;
+    padding:10px 10px 10px 10px;
+    border:#26C485 solid 3px;
+    border-radius: 20px;
+}
+.formaGumbi{
+    margin-top:50px;
+    float:left;
+    width:100%;
+}
+.okvirDokumentacjeText{
+    border: 3px solid #26C485;
+    background-color: #fdfffc;
+    color:#1D2D44;
+    margin:10px 50px 50px 50px;
+    padding: 25px 25px 25px 25px;
+    float:left;
+    width:80%;
+    height: auto;
+}

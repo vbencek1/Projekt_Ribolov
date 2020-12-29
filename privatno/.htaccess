@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Administracija sustava"
+AuthUserFile  /var/www/webdip.barka.foi.hr/2018_projekti/WebDiP2018x009/.htpasswd
+Require valid-user

@@ -1,0 +1,42 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21.03.2019., 23:56:37
+    Author     : Tino
+*/
+@media only screen and (min-width: 1024px) and (max-width: 1365px){
+
+
+    .misljenje{
+        width:60%;
+    }
+    .okvirSlika{
+        margin-left: 40px;
+    }
+    .okvirText{
+        margin-left:30px;
+        width:45%;
+    }
+    article {  
+        width: 25%; 
+        margin:20px 30px 20px 30px;
+        padding: 10px 50px 15px 35px;
+
+    }
+    .okvirPozdravnePoruke{
+        margin:50px 30px 50px 30px;
+        
+    }
+
+    .okvirRegistacije{
+        margin-left:300px;
+        margin-right:280px;
+    }
+    .grid-glavni {
+        grid-template-columns: auto auto auto auto;
+    }
+
+}

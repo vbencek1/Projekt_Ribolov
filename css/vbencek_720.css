@@ -1,0 +1,97 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22.03.2019., 00:20:09
+    Author     : Tino
+*/
+@media only screen and (min-width: 481px) and (max-width:1023px){
+    nav{
+        text-align: left;
+    }
+    .okvirInfo{
+        width:80%
+    }
+    .okvirPozdravnePoruke{
+        margin:30px 10px 30px 10px;
+
+    }
+    .navigacijaNatjecanja{
+        width:100%;
+    }
+    .navigacijaNatjecanja a{
+        text-indent: 10px;
+        margin-left: 10px;
+        margin-right: auto;
+    }
+    .okvirSlika{
+        margin-left: 40px;
+    }
+    .okvirText{
+        margin-left:30px;
+        margin-right:30px;
+        width:auto;
+    }
+    article {  
+        width: 40%; 
+        text-indent: 10px;
+        margin: 10px 10px 10px 10px;
+        padding: 5px 5px 10px 5px;
+        height: 220px;
+        font-size: 13px;
+    }
+    .okvirRegistacije{
+        width:40%;
+        overflow: hidden;
+    }
+    .okvirPrijave{
+        width:40%;
+        overflow: hidden;
+    }
+    .labela{
+        width: 100px;
+        font-size: 13px;
+    }
+    .unos{
+        width:140px;
+        height: 20px;
+
+
+    }
+    .crvena{
+        width:140px;
+        height: 20px;
+    }
+    .labela-obrazac{
+        width: 280px;
+        font-size: 12px;
+    }
+    .misljenje{
+        color:#1b1725;
+        border-radius: 10px;
+        border:#1b1725;
+        width: 100%
+    }
+    .naslov-obrazac{
+        text-align: left;
+        padding-top:5px;
+        padding-bottom: 5px;
+    }
+    .cjeline-obrazac{
+        width:80%;
+
+    }
+    .gumb-postava{
+        width:50%;
+        margin-left:0;
+    }
+    .grid-glavni {
+        grid-template-columns: auto auto;
+
+    }
+    .sakrij{
+        display:none;
+    }
+}
